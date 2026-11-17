@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · Wei-Li Liao</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portfolio of Wei-Li Liao, architecture student at National Cheng Kung University.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><a class="name" href="index.html">Wei-Li Liao</a><nav><a href="index.html">Design</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav></header>
+<main class="contact-page"><h1>Contact</h1>
+<p class="lede">For studio, research or collaboration enquiries, write to me by email.</p>
+<div class="cards">
+<div class="row"><span class="when">Email</span><span class="what"><span class="sel" id="mail">liaoweili921203@gmail.com</span> <button type="button" id="copy" class="copy">Copy</button></span></div>
+<div class="row"><span class="when">LinkedIn</span><span class="what"><a href="https://www.linkedin.com/in/wei-li-liao-05604731a" target="_blank" rel="noopener">linkedin.com/in/wei-li-liao-05604731a</a></span></div>
+<div class="row"><span class="when">Instagram</span><span class="what"><a href="https://www.instagram.com/winnie.liao" target="_blank" rel="noopener">@winnie.liao</a></span></div>
+<div class="row"><span class="when">Based in</span><span class="what">Tainan, Taiwan · Singapore</span></div>
+<div class="row"><span class="when">CV</span><span class="what"><a href="about.html">See the About page</a></span></div>
+</div></main>
+<script>
+(function(){var b=document.getElementById('copy'),m=document.getElementById('mail');if(!b)return;
+b.addEventListener('click',function(){var t=m.textContent;function sel(){var r=document.createRange();r.selectNodeContents(m);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){b.textContent='Copied'},sel)}else{sel()}})})();
+</script>
+
+<footer class="foot"><span>© 2026 Wei-Li Liao</span><span class="sel">liaoweili921203@gmail.com</span><a href="https://www.linkedin.com/in/wei-li-liao-05604731a" target="_blank" rel="noopener">LinkedIn</a></footer>
+</body>
+</html>
